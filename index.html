@@ -4,13 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Terminator Word Game</title>
     <script defer src="js/main.js"></script>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Protest+Strike&family=Sixtyfour+Convergence&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
+    <header>
+        <div class="header-item left"> <span id="guesses-left"></span></div>
+        <h1>Terminator Word Game</h1>
+        <div class="header-item right">High Score: <span id="high-score">0</span></div>
+    </header>
+
+    <div class="main-content">
+        <div class="left-section">
+            <img src="/assets/SKYNET.jpeg" alt="Skynet" class="image" id="skynet">
+        </div>
+        <div class="center-section">
+            <img src="/assets/John-Connor.jpg" alt="John Connor" class="image" id="john-connor">
+            <div class="word-container">
+                <p id="word-display"></p>
+                <p>Stop Skynet by guessing the word!</p>
+            </div>
+            <button id="reset-btn">Reset / Play Again</button>
+        </div>
+        <div class="right-section">
+            <img src="/assets/Terminator.jpeg" alt="Terminator" class="image" id="terminator">
+            <div class="letter-bank">
+                <div id="letter-bank" class="letter-bank-container">
+                    <button>A</button>
+                    <button>B</button>
+                    <button>C</button>
+                    <button>D</button>
+                    <button>E</button>
+                    <button>F</button>
+                    <button>G</button>
+                    <button>H</button>
+                    <button>I</button>
+                    <button>J</button>
+                    <button>K</button>
+                    <button>L</button>
+                    <button>M</button>
+                    <button>N</button>
+                    <button>O</button>
+                    <button>P</button>
+                    <button>Q</button>
+                    <button>R</button>
+                    <button>S</button>
+                    <button>T</button>
+                    <button>U</button>
+                    <button>V</button>
+                    <button>W</button>
+                    <button>X</button>
+                    <button>Y</button>
+                    <button>Z</button>
+                </div>
+            </div>
+            <div class="remaining-guesses">
+                <p> <span id="remaining-guesses"></span></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
