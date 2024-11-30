@@ -8,15 +8,17 @@
     <script defer src="js/main.js"></script>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Protest+Strike&family=Sixtyfour+Convergence&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Protest+Strike&family=Sixtyfour+Convergence&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="header-item left"> <span id="guesses-left"></span></div>
         <h1>Terminator Word Game</h1>
-        <div class="header-item right">High Score: <span id="high-score">0</span></div>
+        <div class="header-item right"> <span id="high-score"></span></div>
     </header>
 
     <div class="main-content">
@@ -26,6 +28,7 @@
         <div class="center-section">
             <img src="/assets/John-Connor.jpg" alt="John Connor" class="image" id="john-connor">
             <div class="word-container">
+                <p id="game-end-display"></p>
                 <p id="word-display"></p>
                 <p>Stop Skynet by guessing the word!</p>
             </div>
