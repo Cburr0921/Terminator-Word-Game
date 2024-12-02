@@ -5,13 +5,13 @@
 
 
 
-## TerminatorWordGame
+## Terminator Word Game
 
 
 
 
 
-## PseudoCode
+## Pseudo Code
 
 
 
