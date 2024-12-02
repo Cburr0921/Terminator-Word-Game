@@ -1,1 +1,1 @@
-![Wireframe](assets/TerminatorWordGameWireFrame.pdf)
+![Wireframe](/assets/TerminatorWordGameWireFrame.pdf)
