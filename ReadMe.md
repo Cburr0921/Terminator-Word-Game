@@ -1,1 +1,1 @@
-![Wireframe](/assets/TerminatorWordGameWireFrame.pdf)
+![Wireframe](/assets/Wireframe.png)
