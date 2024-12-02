@@ -4,6 +4,7 @@
 
 
 
+<span style="text-decoration: underline;">**Pseudo Code**</span>
 
 
 
@@ -11,7 +12,5 @@
 
 
 
-
-
-<u>**Wireframe**</u>
+<span style="text-decoration: underline;">**Wireframe**</span>
 ![Wireframe](/assets/Wireframe.png)
