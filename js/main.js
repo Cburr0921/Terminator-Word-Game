@@ -88,6 +88,7 @@ function createDashes() {
 function checkGameStatus() {
   if (gameWord.split('').every(letter => correctGuesses.includes(letter))) {
     endGameDisplayEl.textContent = 'You Stopped SKYNET!';
+    updateHighScore();
     setTimeout(initialize, 2000);
   } else if (guessesLeft === 0) {
     endGameDisplayEl.textContent = 'Game Over! SKYNET has won!';
@@ -142,4 +143,18 @@ function reduceImageOpacity() {
  */
 function resetImageOpacity() {
   JohnConnorImg.style.opacity = 1; 
+}
+
+  /**
+   * Update the high score in local storage and the high score element in the
+   * DOM if the current score is higher than the high score.
+   *
+   * This is called when the game is won.
+   */
+function updateHighScore() {
+  if (guessesLeft > highScore) {
+    highScore = guessesLeft;
+    localStorage.setItem('highScore', highScore); 
+    highScoreEl.textContent = `High Score: ${highScore}`; 
+  }
 }
