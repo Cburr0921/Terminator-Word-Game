@@ -6,6 +6,7 @@ let gameWord;
 let correctGuesses;
 let wrongGuesses;
 let guessesLeft;
+let highScore;
 
 /*----- cached elements  -----*/
 const guessesLeftEl = document.getElementById("guesses-left");
@@ -32,10 +33,12 @@ for (let button of letterButtons) {
  * Selects a random game word from the word list and logs it to the console.
  * Resets the end game display element and enables all letter buttons.
  */
-function initialize() {
+function init() {
   correctGuesses = [];
   wrongGuesses = [];
   guessesLeft = 6;
+  highScore = 0;
+  
 
   gameWord = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
   console.log("Game Word:", gameWord);
@@ -62,6 +65,7 @@ function render() {
   remainingGuessesEl.textContent = `Remaining Wrong Guesses: ${guessesLeft}`;
   guessesLeftEl.textContent = `Wrong Guesses Left: ${guessesLeft}`;
   wordDisplayEl.textContent = createDashes();
+  highScoreEl.textContent = `High Score: ${highScore}`;
 }
 
 /**
@@ -83,10 +87,10 @@ function createDashes() {
 function checkGameStatus() {
   if (gameWord.split('').every(letter => correctGuesses.includes(letter))) {
     endGameDisplayEl.textContent = 'You Stopped SKYNET!';
-    setTimeout(initialize, 2000);
+    setTimeout(init, 2000);
   } else if (guessesLeft === 0) {
-    endGameDisplayEl.textContent = 'SKYNET Wins!';
-    setTimeout(initialize, 2000);
+    endGameDisplayEl.textContent = 'Game Over! SKYNET has won!';
+    setTimeout(init, 2000);
   }
 }
 
@@ -99,7 +103,7 @@ function checkGameStatus() {
    * If not, add it to wrongGuesses and decrement guessesLeft.
    * Update game board and check if the game is over.
    */
-function handleLetterGuess() {
+function handleLetterGuess(evt) {
   const letter = this.textContent.toUpperCase();
 
   if (correctGuesses.includes(letter) || wrongGuesses.includes(letter)) {
