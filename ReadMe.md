@@ -13,4 +13,4 @@
 
 
 <span style="text-decoration: underline;">**Wireframe**</span>
-![Wireframe](/assets/Wireframe.png)
+<img src="/assets/TerminatorWordGameWireFrame.pdf" alt="Alt Text" style="width:300px; height:auto;"/>
