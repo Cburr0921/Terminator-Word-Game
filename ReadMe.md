@@ -13,4 +13,4 @@
 
 
 <span style="text-decoration: underline;">**Wireframe**</span>
-![Wireframe](/assets/Wireframe.png)
+!<img src="/assets/Wireframe.png" alt="Wireframe" width="500"/>
