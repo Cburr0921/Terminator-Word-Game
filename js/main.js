@@ -17,6 +17,8 @@ const resetButton = document.getElementById("reset-btn");
 const remainingGuessesEl = document.getElementById("remaining-guesses");
 const endGameDisplayEl = document.getElementById("game-end-display");
 const JohnConnorImg = document.getElementById('john-connor');
+const winAudio = new Audio('/assets/-hasta-la-vista,-baby-.mp3');
+
 
 /*----- event listeners -----*/
 resetButton.addEventListener("click", initialize);
@@ -88,6 +90,7 @@ function createDashes() {
 function checkGameStatus() {
   if (gameWord.split('').every(letter => correctGuesses.includes(letter))) {
     endGameDisplayEl.textContent = 'You Stopped SKYNET!';
+    winAudio.play();
     updateHighScore();
     setTimeout(initialize, 2000);
   } else if (guessesLeft === 0) {
