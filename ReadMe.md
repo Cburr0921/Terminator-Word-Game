@@ -4,12 +4,13 @@
 
 
 
-<span style="text-decoration: underline;">Pseudo Code</span>
+**Pseudo Code**
 
 
 
 
 **Wireframe**
+
 
 <img src="/assets/Wireframe.png" alt="Wireframe" width="500"/>
 
