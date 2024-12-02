@@ -33,15 +33,16 @@ for (let button of letterButtons) {
  * Selects a random game word from the word list and logs it to the console.
  * Resets the end game display element and enables all letter buttons.
  */
-function init() {
+function initialize() {
   correctGuesses = [];
   wrongGuesses = [];
   guessesLeft = 6;
-  highScore = 0;
+  highScore = parseInt(localStorage.getItem('highScore')) || 0;
+
   
 
   gameWord = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
-  console.log("Game Word:", gameWord);
+  // console.log("Game Word:", gameWord);
 
   endGameDisplayEl.textContent = '';
   for (let button of letterButtons) {
@@ -87,10 +88,10 @@ function createDashes() {
 function checkGameStatus() {
   if (gameWord.split('').every(letter => correctGuesses.includes(letter))) {
     endGameDisplayEl.textContent = 'You Stopped SKYNET!';
-    setTimeout(init, 2000);
+    setTimeout(initialize, 2000);
   } else if (guessesLeft === 0) {
     endGameDisplayEl.textContent = 'Game Over! SKYNET has won!';
-    setTimeout(init, 2000);
+    setTimeout(initialize, 2000);
   }
 }
 
