@@ -1,4 +1,6 @@
 <h1 align="center">Terminator Word Game </h1>
+<img src="https://images.pexels.com/photos/29579040/pexels-photo-29579040/free-photo-of-colorful-alphabet-tiles-in-a-bowl.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Game Screenshot" width="500"/>
+
 
 # Table of Contents
 - [Terminator Word Game](#terminator-word-game)
@@ -33,7 +35,6 @@ Guess the secret word before your wrong guesses are up to stop SKYNET.
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 
 ## Pseudo Code
-
 
 
 
