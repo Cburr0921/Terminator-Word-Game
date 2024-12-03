@@ -1,7 +1,7 @@
 # Table of Contents
 - [Terminator Word Game ](#TerminatorWordGame)
+- [Screenshot](#Screenshot)
 - [Pseudo Code](#PseudoCode)
-- [Wireframe](#Wireframe)
 
 
 
@@ -12,16 +12,18 @@ Click the play Button to start.
 
 Guess the secret word before your wrong guesses are up to stop SKYNET.
 
+
+## Screenshot
 <img src="/assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
+
 <img src="/assets/TerminatorWordGameScreenshot2.png" alt="Game Screenshot" width="500"/>
+
+<img src="/assets/Wireframe.png" alt="Wireframe" width="500"/>
+
+
 
 ## Pseudo Code
 
 
 
-
-## Wireframe
-
-
-<img src="/assets/Wireframe.png" alt="Wireframe" width="500"/>
 
