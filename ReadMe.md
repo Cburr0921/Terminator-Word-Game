@@ -1,3 +1,5 @@
+<div id="header" align="center">Terminator Word Game </div>
+
 # Table of Contents
 - [Terminator Word Game ](#TerminatorWordGame)
 - [Screenshot](#Screenshot)
