@@ -12,7 +12,8 @@ Click the play Button to start.
 
 Guess the secret word before your wrong guesses are up to stop SKYNET.
 
-<img src="/assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
+<img src="../assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
+<img src="../assets/TerminatorWordGameScreenshot2.png" alt="Game Screenshot" width="500"/>
 
 ## Pseudo Code
 
@@ -22,5 +23,5 @@ Guess the secret word before your wrong guesses are up to stop SKYNET.
 ## Wireframe
 
 
-<img src="/assets/Wireframe.png" alt="Wireframe" width="500"/>
+<img src="../assets/Wireframe.png" alt="Wireframe" width="500"/>
 
