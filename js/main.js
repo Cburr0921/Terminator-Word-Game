@@ -94,7 +94,7 @@ function checkGameStatus() {
     updateHighScore();
     setTimeout(initialize, 2000);
   } else if (guessesLeft === 0) {
-    endGameDisplayEl.textContent = 'Game Over! SKYNET has won!';
+    endGameDisplayEl.textContent = `Game Over! SKYNET has won! The word was ${gameWord}`;
     setTimeout(initialize, 2000);
   }
 }
