@@ -9,22 +9,22 @@ let guessesLeft;
 let highScore;
 
 /*----- cached elements  -----*/
-const guessesLeftEl = document.getElementById("guesses-left");
-const highScoreEl = document.getElementById("high-score");
-const wordDisplayEl = document.getElementById("word-display");
-const letterBankContainer = document.getElementById("letter-bank");
-const resetButton = document.getElementById("reset-btn");
-const remainingGuessesEl = document.getElementById("remaining-guesses");
-const endGameDisplayEl = document.getElementById("game-end-display");
+const guessesLeftEl = document.getElementById('guesses-left');
+const highScoreEl = document.getElementById('high-score');
+const wordDisplayEl = document.getElementById('word-display');
+const letterBankContainer = document.getElementById('letter-bank');
+const resetButton = document.getElementById('reset-btn');
+const remainingGuessesEl = document.getElementById('remaining-guesses');
+const endGameDisplayEl = document.getElementById('game-end-display');
 const JohnConnorImg = document.getElementById('john-connor');
-const winAudio = new Audio('/assets/-hasta-la-vista,-baby-.mp3');
+const winAudio = new Audio('assets/-hasta-la-vista,-baby-.mp3');
 
 
 /*----- event listeners -----*/
-resetButton.addEventListener("click", initialize);
+resetButton.addEventListener('click', initialize);
 const letterButtons = letterBankContainer.getElementsByTagName("button");
 for (let button of letterButtons) {
-  button.addEventListener("click", handleLetterGuess);
+  button.addEventListener('click', handleLetterGuess);
 }
 
 /*----- functions -----*/
