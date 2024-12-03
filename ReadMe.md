@@ -3,15 +3,6 @@
   <img src="https://images.pexels.com/photos/29579040/pexels-photo-29579040/free-photo-of-colorful-alphabet-tiles-in-a-bowl.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Game Screenshot" width="500"/>
 </div>
 
-
-# Table of Contents
-- [Terminator Word Game](#terminator-word-game)
-- [Screenshot](#screenshot)
-- [Technologies Used](#technologies-used)
-- [Pseudo Code](#pseudo-code)
-
-
-
 ## :pencil: Terminator Word Game
 A word guessing game where you are given 6 wrong guesses before John Connor disappears and SKYNET wins!
 
