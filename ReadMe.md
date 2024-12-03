@@ -3,6 +3,7 @@
 # Table of Contents
 - [Terminator Word Game ](#TerminatorWordGame)
 - [Screenshot](#Screenshot)
+- [Technologies Used](#TechnologiesUsed)
 - [Pseudo Code](#PseudoCode)
 
 
