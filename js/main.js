@@ -70,7 +70,8 @@ function render() {
   remainingGuessesEl.textContent = `Remaining Wrong Guesses: ${guessesLeft}`;
   guessesLeftEl.textContent = `Wrong Guesses Left: ${guessesLeft}`;
   wordDisplayEl.textContent = createDashes();
-  highScoreEl.textContent = `High Score: ${highScore} (${storedInitials})`;}
+  highScoreEl.textContent = `High Score: ${highScore} (${storedInitials})`;
+}
 
 /**
  * Creates a string representation of the game word with unguessed letters
