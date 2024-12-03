@@ -1,10 +1,10 @@
 <h1 align="center">Terminator Word Game </h1>
 
 # Table of Contents
-- [Terminator Word Game ](#TerminatorWordGame)
-- [Screenshot](#Screenshot)
-- [Technologies Used](#TechnologiesUsed)
-- [Pseudo Code](#PseudoCode)
+- [Terminator Word Game](#terminator-word-game)
+- [Screenshot](#screenshot)
+- [Technologies Used](#technologies-used)
+- [Pseudo Code](#pseudo-code)
 
 
 
