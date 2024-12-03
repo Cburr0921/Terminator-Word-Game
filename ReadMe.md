@@ -1,4 +1,4 @@
-<div id="header" align="center">Terminator Word Game </div>
+<h1 id="header" align="center">Terminator Word Game </h1>
 
 # Table of Contents
 - [Terminator Word Game ](#TerminatorWordGame)
