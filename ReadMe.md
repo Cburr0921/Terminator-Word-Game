@@ -23,7 +23,7 @@ Guess the secret word before your wrong guesses are up to stop SKYNET.
 
 <img src="/assets/Wireframe.png" alt="Wireframe" width="500"/>
 
-
+## Technologies Used
 
 ## Pseudo Code
 
