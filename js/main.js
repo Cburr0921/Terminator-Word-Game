@@ -7,6 +7,7 @@ let correctGuesses;
 let wrongGuesses;
 let guessesLeft;
 let highScore;
+let storedInitials;
 
 /*----- cached elements  -----*/
 const guessesLeftEl = document.getElementById('guesses-left');
@@ -22,7 +23,7 @@ const winAudio = new Audio('assets/-hasta-la-vista,-baby-.mp3');
 
 /*----- event listeners -----*/
 resetButton.addEventListener('click', initialize);
-const letterButtons = letterBankContainer.getElementsByTagName("button");
+const letterButtons = letterBankContainer.getElementsByTagName('button');
 for (let button of letterButtons) {
   button.addEventListener('click', handleLetterGuess);
 }
@@ -40,7 +41,8 @@ function initialize() {
   wrongGuesses = [];
   guessesLeft = 6;
   highScore = parseInt(localStorage.getItem('highScore')) || 0;
-
+  storedInitials = localStorage.getItem('highScoreInitials') || '';
+ 
   
 
   gameWord = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
@@ -68,8 +70,7 @@ function render() {
   remainingGuessesEl.textContent = `Remaining Wrong Guesses: ${guessesLeft}`;
   guessesLeftEl.textContent = `Wrong Guesses Left: ${guessesLeft}`;
   wordDisplayEl.textContent = createDashes();
-  highScoreEl.textContent = `High Score: ${highScore}`;
-}
+  highScoreEl.textContent = `High Score: ${highScore} (${storedInitials})`;}
 
 /**
  * Creates a string representation of the game word with unguessed letters
@@ -157,7 +158,9 @@ function resetImageOpacity() {
 function updateHighScore() {
   if (guessesLeft > highScore) {
     highScore = guessesLeft;
-    localStorage.setItem('highScore', highScore); 
-    highScoreEl.textContent = `High Score: ${highScore}`; 
+    const initials = prompt("New High Score! Enter your initials (max 3 characters):", "").toUpperCase().slice(0, 3);
+    localStorage.setItem('highScore', highScore);
+    localStorage.setItem('highScoreInitials', initials);
+    highScoreEl.textContent = `High Score: ${highScore} (${initials})`;
   }
 }
