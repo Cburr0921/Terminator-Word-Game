@@ -7,7 +7,7 @@
 
 ## Terminator Word Game
 
-
+Guess the secret word before your wrong guesses are up to stop SKYNET
 
 
 
