@@ -52,9 +52,11 @@ A word guessing game where you have to guess the secret word before John Connor 
  
  ## Attributions:
 
-- **Font**: The fonts "Orbitron" and "Space Mono" were provided by [Google Fonts](https://fonts.google.com/).
-- **Image**:
-
-- **Audio**:
+**Font**: 
+- The fonts "Orbitron" and "Space Mono" were provided by [Google Fonts](https://fonts.google.com/).
+**Image**:
+- The John Connor image was found at [Movie Morgue Wiki](https://moviemorgue.fandom.com/wiki/John_Connor)
+- The T-600 image was found at [Terminator Wiki](https://terminator.fandom.com/wiki/Terminator_Wiki)
+**Audio**:
 
 
