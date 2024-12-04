@@ -50,5 +50,11 @@ A word guessing game where you have to guess the secret word before John Connor 
 - Add noise on wrong guesses
 - Increase word difficulty 
  
+ ## Attributions:
+
+- **Font**: The fonts "Orbitron" and "Space Mono" were provided by [Google Fonts](https://fonts.google.com/).
+- **Image**:
+
+- **Audio**:
 
 
