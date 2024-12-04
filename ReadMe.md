@@ -11,7 +11,7 @@ Click the Play Button to start.
 Guess the secret word before your wrong guesses are up to stop SKYNET.
 
 ## :fire: Getting Started
-<div align="center">Deployed Link</div>  
+<h2 align="center">Deployed Link</h2>  
 
 ## :camera_flash: Screenshot
 <img src="/assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
