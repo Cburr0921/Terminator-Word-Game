@@ -17,11 +17,14 @@ A word guessing game where you have to guess the secret word before John Connor 
 
 
 ## :camera_flash: Screenshot
-**Game Load Page** <img src="../assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
+**Game Load Page** 
+<img src="../assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
 
-**Game Start** <img src="../assets/TerminatorWordGameScreenshot2.png" alt="Game Screenshot" width="500"/>
+**Game Start** 
+<img src="../assets/TerminatorWordGameScreenshot2.png" alt="Game Screenshot" width="500"/>
 
-**Wireframe** <img src="../assets/Wireframe.png" alt="Wireframe" width="500"/>
+**Wireframe** 
+<img src="../assets/Wireframe.png" alt="Wireframe" width="500"/>
 
  ## :computer: Technologies Used
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
