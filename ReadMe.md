@@ -60,5 +60,5 @@ A word guessing game where you have to guess the secret word before John Connor 
 - The T-600 image was found at [Terminator Wiki](https://terminator.fandom.com/wiki/Terminator_Wiki)
 
 - **Audio**:
-
+- The winning sound clip mp3 was found at [Movie Sounds](https://movie-sounds.org/sci-fi-movie-samples/quotes-with-sound-clips-from-terminator-2-judgment-day/hasta-la-vista-baby-2)
 
