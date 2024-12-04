@@ -9,6 +9,10 @@ A word guessing game where you have to guess the secret word before John Connor 
 ## :fire: Getting Started
 <div align="center">Deployed Link</div>  
 
+<div align="center">Planning Link</div> 
+https://github.com/Cburr0921/Terminator-Word-Game/tree/main/planning
+
+## :game_die: How To Play
 1. Click the `Play` Button To Start
 2. Click On A Letter In The `Letter Bank` To Guess
 3. You Are Given Six Wrong Guesses Before John Connor Disappears
@@ -16,7 +20,7 @@ A word guessing game where you have to guess the secret word before John Connor 
 
 
 
-## :camera_flash: Screenshot
+## :camera_flash: Screenshots
 <table>
   <tr>
     <td>Game Load Page</td>
