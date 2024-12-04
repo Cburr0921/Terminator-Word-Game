@@ -44,7 +44,7 @@ A word guessing game where you have to guess the secret word before John Connor 
 
 ## :satellite: Upcoming Features
 - Add noise on wrong guesses
-- Increase word dificulty 
+- Increase word difficulty 
  
 
 
