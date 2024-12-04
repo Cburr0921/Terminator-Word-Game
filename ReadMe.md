@@ -11,6 +11,7 @@ Click the Play Button to start.
 Guess the secret word before your wrong guesses are up to stop SKYNET.
 
 ## :fire: Getting Started
+ <summary> Deployed Link  </summary>
 
 ## :camera_flash: Screenshot
 <img src="/assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
@@ -29,6 +30,6 @@ Guess the secret word before your wrong guesses are up to stop SKYNET.
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 
 ## :satellite: Upcoming Features
-
+- [:star:] Add noise on wrong guess 
 
 
