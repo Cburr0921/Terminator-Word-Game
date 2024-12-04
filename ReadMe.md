@@ -17,12 +17,20 @@ A word guessing game where you have to guess the secret word before John Connor 
 
 
 ## :camera_flash: Screenshot
-| Title              | Image                                                                 |
-|---------------------|----------------------------------------------------------------------|
-| **Game Load Page**  | ![Game Screenshot](/assets/TerminatorWordGameScreenshot.png)         |
-| **Game Start**      | ![Game Screenshot](/assets/TerminatorWordGameScreenshot2.png)        |
-| **Wireframe**       | ![Wireframe](/assets/Wireframe.png)                                  |
-
+<table>
+  <tr>
+    <td>Game Load Page</td>
+    <td><img src="/assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/></td>
+  </tr>
+  <tr>
+    <td>Game Start</td>
+    <td><img src="/assets/TerminatorWordGameScreenshot2.png" alt="Game Screenshot" width="500"/></td>
+  </tr>
+  <tr>
+    <td>Wireframe</td>
+    <td><img src="/assets/Wireframe.png" alt="Wireframe" width="500"/></td>
+  </tr>
+</table>
 
 
  ## :computer: Technologies Used
