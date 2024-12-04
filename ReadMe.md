@@ -30,6 +30,6 @@ Guess the secret word before your wrong guesses are up to stop SKYNET.
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 
 ## :satellite: Upcoming Features
-- [:star:] Add noise on wrong guess 
+- [:x:] Add noise on wrong guess 
 
 
