@@ -9,7 +9,7 @@ A word guessing game where you have to guess the secret word before John Connor 
 ## :fire: Getting Started
 <div align="center">Deployed Link</div>  
 
-1. Click the `Play` Button
+1. Click the `Play` Button To Start
 2. Click On A Letter In The `Letter Bank` To Guess
 3. You Are Given Six Wrong Guesses Before John Connor Disappears
 4. Hit The `Reset` Button To Replay The Game And Reset The Hidden Word 
@@ -18,13 +18,13 @@ A word guessing game where you have to guess the secret word before John Connor 
 
 ## :camera_flash: Screenshot
 **Game Load Page** 
-<img src="../assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
+<img src="/assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
 
 **Game Start** 
-<img src="../assets/TerminatorWordGameScreenshot2.png" alt="Game Screenshot" width="500"/>
+<img src="/assets/TerminatorWordGameScreenshot2.png" alt="Game Screenshot" width="500"/>
 
 **Wireframe** 
-<img src="../assets/Wireframe.png" alt="Wireframe" width="500"/>
+<img src="/assets/Wireframe.png" alt="Wireframe" width="500"/>
 
  ## :computer: Technologies Used
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
