@@ -4,21 +4,24 @@
 </div>
 
 ## :pencil: Terminator Word Game
-A word guessing game where you are given 6 wrong guesses before John Connor disappears and SKYNET wins!
-
-Click the Play Button to start.
-
-Guess the secret word before your wrong guesses are up to stop SKYNET.
+A word guessing game where you have to guess the secret word before John Connor disappears and SKYNET wins!
 
 ## :fire: Getting Started
 <div align="center">Deployed Link</div>  
 
+1. Click the `Play` Button
+2. Click On A Letter In The `Letter Bank` To Guess
+3. You Are Given Six Wrong Guesses Before John Connor Disappears
+4. Hit The `Reset` Button To Replay The Game And Reset The Hidden Word 
+
+
+
 ## :camera_flash: Screenshot
-<img src="/assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
+**Game Load Page** <img src="../assets/TerminatorWordGameScreenshot.png" alt="Game Screenshot" width="500"/>
 
-<img src="/assets/TerminatorWordGameScreenshot2.png" alt="Game Screenshot" width="500"/>
+**Game Start** <img src="../assets/TerminatorWordGameScreenshot2.png" alt="Game Screenshot" width="500"/>
 
-<img src="/assets/Wireframe.png" alt="Wireframe" width="500"/>
+**Wireframe** <img src="../assets/Wireframe.png" alt="Wireframe" width="500"/>
 
  ## :computer: Technologies Used
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
@@ -30,7 +33,7 @@ Guess the secret word before your wrong guesses are up to stop SKYNET.
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 
 ## :satellite: Upcoming Features
--  Add noise on wrong guesses
+- Add noise on wrong guesses
 - Increase word dificulty 
  
 
