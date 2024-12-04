@@ -42,12 +42,11 @@ function initialize() {
   guessesLeft = 6;
   highScore = parseInt(localStorage.getItem('highScore')) || 0;
   storedInitials = localStorage.getItem('highScoreInitials') || '';
- 
-  
+
+
 
   gameWord = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
-  // console.log("Game Word:", gameWord);
-
+  
   endGameDisplayEl.textContent = '';
   for (let button of letterButtons) {
     button.disabled = false;
@@ -84,11 +83,11 @@ function createDashes() {
   return gameWord.split('').map(letter => (correctGuesses.includes(letter) ? letter : '_')).join(' ');
 }
 
-  /**
-   * Checks if the game is over and displays a message accordingly.
-   * If the user has guessed the word, displays a win message and resets the game after 2 seconds.
-   * If the user has run out of guesses, displays a lose message and resets the game after 2 seconds.
-   */
+/**
+ * Checks if the game is over and displays a message accordingly.
+ * If the user has guessed the word, displays a win message and resets the game after 2 seconds.
+ * If the user has run out of guesses, displays a lose message and resets the game after 2 seconds.
+ */
 function checkGameStatus() {
   if (gameWord.split('').every(letter => correctGuesses.includes(letter))) {
     endGameDisplayEl.textContent = 'You Stopped SKYNET!';
@@ -101,15 +100,15 @@ function checkGameStatus() {
   }
 }
 
-  /**
-   * Handle a letter guess.
-   *
-   * If the letter has already been guessed, do nothing.
-   * Disable the button for the guessed letter.
-   * If the letter is in the game word, add it to correctGuesses.
-   * If not, add it to wrongGuesses and decrement guessesLeft.
-   * Update game board and check if the game is over.
-   */
+/**
+ * Handle a letter guess.
+ *
+ * If the letter has already been guessed, do nothing.
+ * Disable the button for the guessed letter.
+ * If the letter is in the game word, add it to correctGuesses.
+ * If not, add it to wrongGuesses and decrement guessesLeft.
+ * Update game board and check if the game is over.
+ */
 function handleLetterGuess(evt) {
   const letter = this.textContent.toUpperCase();
 
@@ -131,15 +130,15 @@ function handleLetterGuess(evt) {
   checkGameStatus();
 }
 
-  /**
-   * Reduce the opacity of the John Connor image.
-   *
-   * Decreases the opacity by 1/6 of its current value, but not below 0.
-   * This is called when the user makes an incorrect guess to make the image fade.
-   */
+/**
+ * Reduce the opacity of the John Connor image.
+ *
+ * Decreases the opacity by 1/6 of its current value, but not below 0.
+ * This is called when the user makes an incorrect guess to make the image fade.
+ */
 function reduceImageOpacity() {
-  const opacityReduction = 1 / 6; 
-  const newOpacity = Math.max(0, JohnConnorImg.style.opacity - opacityReduction); 
+  const opacityReduction = 1 / 6;
+  const newOpacity = Math.max(0, JohnConnorImg.style.opacity - opacityReduction);
   JohnConnorImg.style.opacity = newOpacity;
 }
 
@@ -147,15 +146,15 @@ function reduceImageOpacity() {
  * Reset the opacity of the John Connor image when the game starts or is reset.
  */
 function resetImageOpacity() {
-  JohnConnorImg.style.opacity = 1; 
+  JohnConnorImg.style.opacity = 1;
 }
 
-  /**
-   * Update the high score in local storage and the high score element in the
-   * DOM if the current score is higher than the high score.
-   *
-   * This is called when the game is won.
-   */
+/**
+ * Update the high score in local storage and the high score element in the
+ * DOM if the current score is higher than the high score.
+ *
+ * This is called when the game is won.
+ */
 function updateHighScore() {
   if (guessesLeft > highScore) {
     highScore = guessesLeft;
