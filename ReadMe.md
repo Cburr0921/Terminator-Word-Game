@@ -7,7 +7,7 @@
 A word guessing game where you have to guess the secret word before John Connor disappears and SKYNET wins!
 
 ## :fire: Getting Started
-### [Deployed Link] 
+### [Deployed Link]()
 
 ### [Planning Link](https://github.com/Cburr0921/Terminator-Word-Game/tree/main/planning)
 
