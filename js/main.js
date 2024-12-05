@@ -1,5 +1,13 @@
 /*----- constants -----*/
-const wordList = ['Terminator', 'Skynet', 'Kyle', 'Cyberdyne', 'Sarah', 'Connor', 'Judgment'];
+const wordList = [
+  "Terminator",
+  "Skynet",
+  "Kyle",
+  "Cyberdyne",
+  "Sarah",
+  "Connor",
+  "Judgment",
+];
 
 /*----- state variables -----*/
 let gameWord;
@@ -10,22 +18,21 @@ let highScore;
 let storedInitials;
 
 /*----- cached elements  -----*/
-const guessesLeftEl = document.getElementById('guesses-left');
-const highScoreEl = document.getElementById('high-score');
-const wordDisplayEl = document.getElementById('word-display');
-const letterBankContainer = document.getElementById('letter-bank');
-const resetButton = document.getElementById('reset-btn');
-const remainingGuessesEl = document.getElementById('remaining-guesses');
-const endGameDisplayEl = document.getElementById('game-end-display');
-const JohnConnorImg = document.getElementById('john-connor');
-const winAudio = new Audio('assets/-hasta-la-vista,-baby-.mp3');
-
+const guessesLeftEl = document.getElementById("guesses-left");
+const highScoreEl = document.getElementById("high-score");
+const wordDisplayEl = document.getElementById("word-display");
+const letterBankContainer = document.getElementById("letter-bank");
+const resetButton = document.getElementById("reset-btn");
+const remainingGuessesEl = document.getElementById("remaining-guesses");
+const endGameDisplayEl = document.getElementById("game-end-display");
+const JohnConnorImg = document.getElementById("john-connor");
+const winAudio = new Audio("assets/-hasta-la-vista,-baby-.mp3");
 
 /*----- event listeners -----*/
-resetButton.addEventListener('click', initialize);
-const letterButtons = letterBankContainer.getElementsByTagName('button');
+resetButton.addEventListener("click", initialize);
+const letterButtons = letterBankContainer.getElementsByTagName("button");
 for (let button of letterButtons) {
-  button.addEventListener('click', handleLetterGuess);
+  button.addEventListener("click", handleLetterGuess);
 }
 
 /*----- functions -----*/
@@ -40,14 +47,13 @@ function initialize() {
   correctGuesses = [];
   wrongGuesses = [];
   guessesLeft = 6;
-  highScore = parseInt(localStorage.getItem('highScore')) || 0;
-  storedInitials = localStorage.getItem('highScoreInitials') || '';
+  highScore = parseInt(localStorage.getItem("highScore")) || 0;
+  storedInitials = localStorage.getItem("highScoreInitials") || "";
 
+  gameWord =
+    wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
 
-
-  gameWord = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
-  
-  endGameDisplayEl.textContent = '';
+  endGameDisplayEl.textContent = "";
   for (let button of letterButtons) {
     button.disabled = false;
   }
@@ -80,7 +86,10 @@ function render() {
  * letters as underscores.
  */
 function createDashes() {
-  return gameWord.split('').map(letter => (correctGuesses.includes(letter) ? letter : '_')).join(' ');
+  return gameWord
+    .split("")
+    .map((letter) => (correctGuesses.includes(letter) ? letter : "_"))
+    .join(" ");
 }
 
 /**
@@ -89,8 +98,8 @@ function createDashes() {
  * If the user has run out of guesses, displays a lose message and resets the game after 2 seconds.
  */
 function checkGameStatus() {
-  if (gameWord.split('').every(letter => correctGuesses.includes(letter))) {
-    endGameDisplayEl.textContent = 'You Stopped SKYNET!';
+  if (gameWord.split("").every((letter) => correctGuesses.includes(letter))) {
+    endGameDisplayEl.textContent = "You Stopped SKYNET!";
     winAudio.play();
     updateHighScore();
     setTimeout(initialize, 2000);
@@ -138,7 +147,10 @@ function handleLetterGuess(evt) {
  */
 function reduceImageOpacity() {
   const opacityReduction = 1 / 6;
-  const newOpacity = Math.max(0, JohnConnorImg.style.opacity - opacityReduction);
+  const newOpacity = Math.max(
+    0,
+    JohnConnorImg.style.opacity - opacityReduction
+  );
   JohnConnorImg.style.opacity = newOpacity;
 }
 
@@ -158,9 +170,14 @@ function resetImageOpacity() {
 function updateHighScore() {
   if (guessesLeft > highScore) {
     highScore = guessesLeft;
-    const initials = prompt("New High Score! Enter your initials (max 3 characters):", "").toUpperCase().slice(0, 3);
-    localStorage.setItem('highScore', highScore);
-    localStorage.setItem('highScoreInitials', initials);
+    const initials = prompt(
+      "New High Score! Enter your initials (max 3 characters):",
+      ""
+    )
+      .toUpperCase()
+      .slice(0, 3);
+    localStorage.setItem("highScore", highScore);
+    localStorage.setItem("highScoreInitials", initials);
     highScoreEl.textContent = `High Score: ${highScore} (${initials})`;
   }
 }
