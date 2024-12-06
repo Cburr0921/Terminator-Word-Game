@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh; 
-    background-image: url('../assets/terminator-background.jpeg');    
+    background-image: url('../assets/terminator-background.jpeg');  
 }
 
 header {
@@ -184,6 +184,17 @@ p {
     color: white;
     font-size: 20px;
 }
+
+@media (min-width: 1200px) {
+  .main-content {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
 
 @media (max-width: 768px) {
     header {
