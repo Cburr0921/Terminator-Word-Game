@@ -50,8 +50,7 @@ function initialize() {
   highScore = parseInt(localStorage.getItem("highScore")) || 0;
   storedInitials = localStorage.getItem("highScoreInitials") || "";
 
-  gameWord =
-    wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
+  gameWord = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
 
   endGameDisplayEl.textContent = "";
   for (let button of letterButtons) {
